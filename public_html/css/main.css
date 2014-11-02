@@ -219,7 +219,8 @@ nav a:visited:hover {
 .header-container,
 .main aside,
 img,
-input {
+input,
+textArea{
     -webkit-box-shadow: 0 5px 10px #aaa;
     -moz-box-shadow: 0 5px 10px #aaa;
     box-shadow: 0 5px 10px #aaa;

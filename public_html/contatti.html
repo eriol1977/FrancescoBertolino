@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/contatti.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+    </head>
+    <body style="background-image: url('img/schizzo_gorilla.jpg'); background-size: auto;">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <a href="index.html"><img src="img/logo.png" alt="logo" height="400" style="max-width:100%; height:auto; box-shadow: none; float: right;" /></a>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix">
+
+                <div class="menu_div">
+                    <form class="inline" action="recensioni.html">
+                        <input class="menu_input" type="submit" value="Recensioni">
+                    </form>
+                    <form class="inline" action="articoli.html">
+                        <input class="menu_input" type="submit" value="Articoli">
+                    </form>
+                    <form class="inline" action="pillole.html">
+                        <input class="menu_input" type="submit" value="Pillole">
+                    </form>
+                    <form class="inline" action="contatti.html">
+                        <input class="menu_input" type="submit" value="Contatti">
+                    </form>
+                </div>
+
+                <aside>
+                    <header>
+                        <p class="bio_title">Bla bla</p>
+                    </header>
+                    <section>
+                </aside>
+
+                <article>
+                    <header>
+                        <p class="article_title" style="margin-bottom: 20px;">Contattami</p>
+                    </header>
+                    <section>
+                        <div>
+                            <form id="form1" enctype="text/plain" method="post" action="mailto:francesco.bertolino@gmail.com?subject=Commento su www.francescobertolino.it">
+
+                                <p class="name">
+                                    <input name="Mittente" type="text" class="feedback-input" placeholder="Nome" id="name" required />
+                                </p>
+
+                                <p class="email">
+                                    <input name="Email" type="email" class="feedback-input" id="email" placeholder="Email" required />
+                                </p>
+
+                                <p class="text">
+                                    <textarea name="Commento" class="feedback-input" id="comment" placeholder="Commento" required></textarea>
+                                </p>
+
+
+                                <div>
+                                    <input type="submit" value="Invia"/>
+                                </div>
+                            </form>
+                        </div>
+                    </section>
+                </article>
+
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <div>&#169;2014 Francesco Bertolino
+                    <span style="float: right;">sfondo: <a href="http://mauriciopaiva.carbonmade.com" target="_blank">Maurício Paiva</a></span>
+                </div>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function (b, o, i, l, e, r) {
+                b.GoogleAnalyticsObject = l;
+                b[l] || (b[l] =
+                        function () {
+                            (b[l].q = b[l].q || []).push(arguments)
+                        });
+                b[l].l = +new Date;
+                e = o.createElement(i);
+                r = o.getElementsByTagName(i)[0];
+                e.src = '//www.google-analytics.com/analytics.js';
+                r.parentNode.insertBefore(e, r)
+            }(window, document, 'script', 'ga'));
+            ga('create', 'UA-XXXXX-X');
+            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
