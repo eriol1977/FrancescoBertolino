@@ -92,17 +92,17 @@ body {
 
 .title {
     color: white;
-    font-size: 200%;
+    font-size: 250%;
     margin-top: 15px;
     margin-bottom: 10px;
 }
 
-.title_link {
-    text-decoration: none;
+.selected_menu_button {
+    background-color: darkgreen;
 }
 
-.selected_menu_button {
-   background-color: darkgreen;
+.menu_div {
+    margin-bottom: 20px;
 }
 
 /* ==============
@@ -125,7 +125,7 @@ nav a {
 
     color: white;
     background: crimson;
-    
+
     border-radius: 10px;
 }
 
@@ -142,8 +142,8 @@ nav a:visited:hover {
 }
 
 .my_link {
-   text-decoration: underline;
-   font-weight: bold; 
+    text-decoration: underline;
+    font-weight: bold; 
 }
 
 .my_link:visited {
@@ -253,6 +253,15 @@ input:active {
     top:1px;
 }
 
+.menu_input {
+    background-color: darkgreen;
+    border:1px solid darkgreen;
+    width: 100%;
+}
+
+.menu_input:hover {
+    color:orange;
+}
 
 nav {
     margin-top: 12px;
@@ -280,6 +289,10 @@ nav ul li a {
     /* ====================
         INTERMEDIATE: Menu
        ==================== */
+
+    .menu_input {
+        width: 49%;
+    }
 
     nav a {
         float: left;
@@ -326,7 +339,7 @@ nav ul li a {
 
     nav {
         float: right;
-        width: 38%;
+        width: 70%;
     }
 
     /* ============
@@ -344,7 +357,14 @@ nav ul li a {
     }
 }
 
-@media only screen and (min-width: 1140px) {
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .menu_input {
+        width: 24.6%;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
 
     /* ===============
         Maximal Width

@@ -24,20 +24,41 @@
 
         <div class="header-container">
             <header class="wrapper clearfix">
-                <a class="title_link" href="index.html"><h1 class="title">Francesco Bertolino</h1></a>
-                <nav>
-                    <ul>
-                        <li><a href="recensioni.html">Recensioni</a></li>
-                        <li><a href="#">Contatti</a></li>
-                        <li><a href="#" class="selected_menu_button">Pillole</a></li>
-                    </ul>
-                </nav>
+                <a href="index.html"><img src="img/logo.png" alt="logo" height="400" style="max-width:100%; height:auto; box-shadow: none; float: right;" /></a>
             </header>
         </div>
 
         <div class="main-container">
             <div class="main wrapper clearfix" >
 
+                <div class="menu_div">
+                    <form class="inline" action="recensioni.html">
+                        <input class="menu_input" type="submit" value="Recensioni">
+                    </form>
+                    <form class="inline" action="articoli.html">
+                        <input class="menu_input" type="submit" value="Articoli">
+                    </form>
+                    <form class="inline" action="pillole.html">
+                        <input class="menu_input" type="submit" value="Pillole">
+                    </form>
+                    <form class="inline" action="contatti.html">
+                        <input class="menu_input" type="submit" value="Contatti">
+                    </form>
+                </div>
+                
+                <aside>
+                    <header>
+                        <p class="bio_title">Attenzione: possibili spoiler!</p>
+                        <img src="img/auguri2013.jpg" alt="nahash" style="border-radius:4px; max-width:100%; height:auto; margin:0px auto; display:block;" />
+                    </header>
+                    <section>
+                        <p>Caro lettore,<br>
+                            eccoti serviti una mezza dozzina di raccontini sperimentali e senza pretese, che spero possano farti sentire più vicino ai personaggi della saga e al loro mondo...</p>
+                        <p>Per essere sicuro sicuro di non incappare in qualche tremendo spoiler, ti suggerisco di continuare soltanto se hai già letto i quattro libri della saga.</p>
+                        <p>Poi non dirmi che non ti avevo avvisato! :))</p>
+                    </section>
+                </aside>
+                
                 <div style="margin-bottom: 20px;" ng-controller="TabsCtrl as ctrl">
                     <form class="inline">
                         <input type="button" value="Nahash 1/6" ng-click="ctrl.navigate(1)">
@@ -58,19 +79,6 @@
                         <input type="button" value="Nahash 6/6" ng-click="ctrl.navigate(6)">
                     </form>
                 </div>
-
-                <aside>
-                    <header>
-                        <p class="bio_title">Attenzione: possibili spoiler!</p>
-                        <img src="img/auguri2013.jpg" alt="nahash" style="border-radius:4px; max-width:100%; height:auto; margin:0px auto; display:block;" />
-                    </header>
-                    <section>
-                        <p>Caro lettore,<br>
-                            eccoti serviti una mezza dozzina di raccontini sperimentali e senza pretese, che spero possano farti sentire più vicino ai personaggi della saga e al loro mondo...</p>
-                        <p>Per essere sicuro sicuro di non incappare in qualche tremendo spoiler, ti suggerisco di continuare soltanto se hai già letto i quattro libri della saga.</p>
-                        <p>Poi non dirmi che non ti avevo avvisato! :))</p>
-                    </section>
-                </aside>
                 
                 <div ng-view></div>
                 
