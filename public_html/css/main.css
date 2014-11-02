@@ -101,6 +101,10 @@ body {
     text-decoration: none;
 }
 
+.selected_menu_button {
+   background-color: darkgreen;
+}
+
 /* ==============
     MOBILE: Menu
    ============== */

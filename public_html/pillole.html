@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" ng-app="tabs"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="css/normalize.min.css">
+        <link rel="stylesheet" href="css/main.css">
+
+        <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+        <script src="js/vendor/angular.min.js"></script>
+        <script src="js/vendor/angular-route.min.js"></script>
+    </head>
+    <body style="background-image: url('img/schizzo_kyra.jpg'); background-size: auto;">
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="header-container">
+            <header class="wrapper clearfix">
+                <a class="title_link" href="index.html"><h1 class="title">Francesco Bertolino</h1></a>
+                <nav>
+                    <ul>
+                        <li><a href="recensioni.html">Recensioni</a></li>
+                        <li><a href="#">Contatti</a></li>
+                        <li><a href="#" class="selected_menu_button">Pillole</a></li>
+                    </ul>
+                </nav>
+            </header>
+        </div>
+
+        <div class="main-container">
+            <div class="main wrapper clearfix" >
+
+                <div style="margin-bottom: 20px;" ng-controller="TabsCtrl as ctrl">
+                    <form class="inline">
+                        <input type="button" value="Nahash 1/6" ng-click="ctrl.navigate(1)">
+                    </form>
+                    <form class="inline">
+                        <input type="button" value="Nahash 2/6" ng-click="ctrl.navigate(2)">
+                    </form>
+                    <form class="inline">
+                        <input type="button" value="Nahash 3/6" ng-click="ctrl.navigate(3)">
+                    </form>
+                    <form class="inline">
+                        <input type="button" value="Nahash 4/6" ng-click="ctrl.navigate(4)">
+                    </form>
+                    <form class="inline">
+                        <input type="button" value="Nahash 5/6" ng-click="ctrl.navigate(5)">
+                    </form>
+                    <form class="inline">
+                        <input type="button" value="Nahash 6/6" ng-click="ctrl.navigate(6)">
+                    </form>
+                </div>
+
+                <aside>
+                    <header>
+                        <p class="bio_title">Attenzione: possibili spoiler!</p>
+                        <img src="img/auguri2013.jpg" alt="nahash" style="border-radius:4px; max-width:100%; height:auto; margin:0px auto; display:block;" />
+                    </header>
+                    <section>
+                        <p>Caro lettore,<br>
+                            eccoti serviti una mezza dozzina di raccontini sperimentali e senza pretese, che spero possano farti sentire più vicino ai personaggi della saga e al loro mondo...</p>
+                        <p>Per essere sicuro sicuro di non incappare in qualche tremendo spoiler, ti suggerisco di continuare soltanto se hai già letto i quattro libri della saga.</p>
+                        <p>Poi non dirmi che non ti avevo avvisato! :))</p>
+                    </section>
+                </aside>
+                
+                <div ng-view></div>
+                
+            </div> <!-- #main -->
+        </div> <!-- #main-container -->
+
+        <div class="footer-container">
+            <footer class="wrapper">
+                <div>&#169;2014 Francesco Bertolino
+                    <span style="float: right;">sfondo: <a href="#" target="_blank">???</a></span>
+                </div>
+            </footer>
+        </div>
+
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.1.js"><\/script>')</script>
+
+        <script src="js/main.js"></script>
+        <script src="js/tabs.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+                            (function (b, o, i, l, e, r) {
+                            b.GoogleAnalyticsObject = l;
+                                    b[l] || (b[l] =
+                                    function () {
+                                    (b[l].q = b[l].q || []).push(arguments)
+                                    });
+                                    b[l].l = + new Date;
+                                    e = o.createElement(i);
+                                    r = o.getElementsByTagName(i)[0];
+                                    e.src = '//www.google-analytics.com/analytics.js';
+                                    r.parentNode.insertBefore(e, r)
+                            }(window, document, 'script', 'ga'));
+                            ga('create', 'UA-XXXXX-X');
+                            ga('send', 'pageview');
+        </script>
+    </body>
+</html>
