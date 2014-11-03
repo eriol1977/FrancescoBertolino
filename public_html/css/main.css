@@ -1,5 +1,7 @@
 /*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
 
+// palette: http://www.colourlovers.com/palette/364480/Unexpected_Spellwork
+
 html,nav
 button,
 input,
@@ -124,7 +126,7 @@ nav a {
     font-weight: bold;
 
     color: white;
-    background: crimson;
+    background: #c70000;
 
     border-radius: 10px;
 }
@@ -148,6 +150,15 @@ nav a:visited:hover {
 
 .my_link:visited {
     color: black;
+}
+
+.my_link_white {
+    text-decoration: underline;
+    color: white;
+}
+
+.my_link_white:visited {
+    color: white;
 }
 
 /* ==============
@@ -231,11 +242,11 @@ textArea{
    ========================================================================== */
 
 input {
-    background-color:crimson;
+    background-color:#c70000;
     -moz-border-radius:10px;
     -webkit-border-radius:4px;
     border-radius:4px;
-    border:1px solid crimson;
+    border:1px solid #c70000;
     display:inline-block;
     cursor:pointer;
     color:#ffffff;
@@ -247,7 +258,7 @@ input {
     margin-bottom: 10px;
 }
 input:hover {
-    color:black;
+    color:orange;
 }
 input:active {
     position:relative;
@@ -255,8 +266,8 @@ input:active {
 }
 
 .menu_input {
-    background-color: darkgreen;
-    border:1px solid darkgreen;
+    background-color: #8c0000;
+    border:1px solid #8c0000;
     width: 100%;
     text-shadow: none;
 }
@@ -266,8 +277,8 @@ input:active {
 }
 
 .menu_input_selected {
-    background-color: darkblue;
-    border:1px solid darkblue;
+    background-color: #4f0000;
+    border:1px solid #4f0000;
     width: 100%;
     text-shadow: none;
 }
