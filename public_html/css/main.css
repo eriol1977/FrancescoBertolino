@@ -258,10 +258,23 @@ input:active {
     background-color: darkgreen;
     border:1px solid darkgreen;
     width: 100%;
+    text-shadow: none;
 }
 
 .menu_input:hover {
     color:orange;
+}
+
+.menu_input_selected {
+    background-color: darkblue;
+    border:1px solid darkblue;
+    width: 100%;
+    text-shadow: none;
+}
+
+.menu_input_selected:hover {
+    color:white;
+    cursor: default;
 }
 
 nav {
@@ -291,8 +304,9 @@ nav ul li a {
         INTERMEDIATE: Menu
        ==================== */
 
-    .menu_input {
-        width: 49%;
+    .menu_input,
+    .menu_input_selected{
+        width: 49.4%;
     }
 
     nav a {
@@ -360,8 +374,9 @@ nav ul li a {
 
 /* Medium Devices, Desktops */
 @media only screen and (min-width : 992px) {
-    .menu_input {
-        width: 24.6%;
+    .menu_input,
+    .menu_input_selected {
+        width: 19.6%;
     }
 }
 

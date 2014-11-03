@@ -16,7 +16,7 @@
 
         <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
     </head>
-    <body style="background-image: url('img/schizzo_gorilla.jpg'); background-size: auto;">
+    <body style="background-image: url('img/schizzo_automa.jpg'); background-size: auto;">
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
@@ -31,6 +31,9 @@
             <div class="main wrapper clearfix">
 
                 <div class="menu_div">
+                    <form class="inline" action="index.html">
+                        <input class="menu_input" type="submit" value="Libri">
+                    </form>
                     <form class="inline" action="recensioni.html">
                         <input class="menu_input" type="submit" value="Recensioni">
                     </form>
@@ -41,15 +44,19 @@
                         <input class="menu_input" type="submit" value="Pillole">
                     </form>
                     <form class="inline" action="contatti.html">
-                        <input class="menu_input" type="submit" value="Contatti">
+                        <input class="menu_input_selected" type="submit" disabled value="Contatti">
                     </form>
                 </div>
 
                 <aside>
                     <header>
-                        <p class="bio_title">Bla bla</p>
+                        <p class="bio_title">Attenzione!</p>
                     </header>
                     <section>
+                        <p>Affinché l'invio dei tuoi commenti vada a buon fine, un software di posta elettronica dev'essere installato e correttamente configurato sul tuo PC.</p>
+                        <p>In caso di problemi, scrivimi pure all'indirizzo:</p>
+                        <p><em>francesco.bertolino@gmail.com</em></p>
+                    </section>
                 </aside>
 
                 <article>
@@ -74,7 +81,7 @@
 
 
                                 <div>
-                                    <input type="submit" value="Invia"/>
+                                    <input type="submit" value="Invia" style="width: 30%;"/>
                                 </div>
                             </form>
                         </div>
