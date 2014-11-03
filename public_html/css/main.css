@@ -25,15 +25,6 @@ html {
     text-shadow: none;
 }
 
-hr {
-    display: block;
-    height: 1px;
-    border: 0;
-    border-top: 1px solid #ccc;
-    margin: 1em 0;
-    padding: 0;
-}
-
 audio,
 canvas,
 img,
@@ -107,42 +98,6 @@ body {
     margin-bottom: 20px;
 }
 
-/* ==============
-    MOBILE: Menu
-   ============== */
-
-nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-nav a {
-    display: block;
-    margin-bottom: 10px;
-    padding: 15px 0;
-
-    text-align: center;
-    text-decoration: none;
-    font-weight: bold;
-
-    color: white;
-    background: #c70000;
-
-    border-radius: 10px;
-}
-
-nav a:hover {
-    color: black;
-}
-
-nav a:visited {
-    color: white;
-}
-
-nav a:visited:hover {
-    color: black;
-}
-
 .my_link {
     text-decoration: underline;
     font-weight: bold; 
@@ -160,10 +115,6 @@ nav a:visited:hover {
 .my_link_white:visited {
     color: white;
 }
-
-/* ==============
-    MOBILE: Main
-   ============== */
 
 .main {
     padding: 30px 0;
@@ -288,23 +239,6 @@ input:active {
     cursor: default;
 }
 
-nav {
-    margin-top: 12px;
-    margin-bottom: 10px;
-}
-
-nav ul li a {
-    padding-bottom: 5px;
-    padding-top: 5px;
-}
-
-
-
-
-
-
-
-
 /* ==========================================================================
    Media Queries
    ========================================================================== */
@@ -320,57 +254,9 @@ nav ul li a {
         width: 49.4%;
     }
 
-    nav a {
-        float: left;
-        width: 27%;
-        margin: 0 1.7%;
-        padding: 25px 2%;
-        margin-bottom: 0;
-    }
-
-    nav li:first-child a {
-        margin-left: 0;
-    }
-
-    nav li:last-child a {
-        margin-right: 0;
-    }
-
-    /* ========================
-        INTERMEDIATE: IE Fixes
-       ======================== */
-
-    nav ul li {
-        display: inline;
-    }
-
-    .oldie nav a {
-        margin: 0 0.7%;
-    }
 }
 
 @media only screen and (min-width: 768px) {
-
-    /* ====================
-        WIDE: CSS3 Effects
-       ==================== */
-
-    /* ============
-        WIDE: Menu
-       ============ */
-
-    .title {
-        float: left;
-    }
-
-    nav {
-        float: right;
-        width: 70%;
-    }
-
-    /* ============
-        WIDE: Main
-       ============ */
 
     .main article {
         float: left;
